@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.block {
+    max-width: 690px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px 30px;
+    border: 1px solid #D7D7D7;
+    .block-img {
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 30px;
+        width: 300px;
+        height: auto;
+        margin-right: 25px;
+    }
+    .block-date {
+        margin-bottom: 25px;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .block-text {
+        line-height: 140%;
+        font-size: 24px;
+    }
+}

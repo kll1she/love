@@ -1,29 +1,270 @@
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
+* {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
-a {
-    text-decoration: none;
+
+body {
+  background-color: #ECEDF1;
 }
-ul, ol, li {
-    list-style: none;
-}
-img {
-    vertical-align: top;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-html, body {
-    height: 100%;
-    line-height: 1;
-    font-size: 16px;
-    color: black;
-}
+
 .container {
-    width: 1170px;
-    border: 2px solid red;
+  width: 95%;
+  margin: 0 auto;
 }
+
+.fx {
+  display: flex;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  justify-content: center;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.header {
+  padding: 50px 0;
+  border-radius: 0 0 50px 50px;
+  background-color: #113d1e;
+  border-bottom: 1px solid #D7D7D7;
+  margin-bottom: 25px;
+}
+
+.clock {
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.clock .clock-item {
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  color: #fefbe2;
+}
+.clock .clock-item::after {
+  content: attr(data-title);
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+.clock .clock-text {
+  color: #fefbe2;
+}
+.clock .end {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #fefbe2;
+  display: none;
+}
+.clock .end.visible {
+  display: block;
+}
+
+.nav {
+  justify-content: center;
+  text-align: center;
+  background-color: #113d1e;
+  max-width: 434px;
+  border-radius: 30px 30px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -187px;
+}
+.nav .nav-item {
+  padding: 15px 25px;
+}
+.nav .nav-img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  fill: #fefbe2;
+}
+.nav .nav-img:active {
+  fill: #fefbe2;
+}
+.nav .nav-img:focus {
+  fill: #fefbe2;
+}
+.nav .nav-img:hover {
+  fill: #fefbe2;
+}
+.nav .nav-text {
+  color: #fefbe2;
+  transition: 0.2s ease;
+  font-size: 13px;
+}
+.nav .nav-text:active {
+  color: #fefbe2;
+}
+.nav .nav-text:focus {
+  color: #fefbe2;
+}
+.nav .nav-text:hover {
+  color: #fefbe2;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.block {
+  max-width: 690px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px 30px;
+  border: 1px solid #D7D7D7;
+}
+.block .block-img {
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  width: 300px;
+  height: auto;
+  margin-right: 25px;
+}
+.block .block-date {
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.block .block-text {
+  line-height: 140%;
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #113d1e;
+  border-radius: 50px 50px 0 0;
+  padding: 50px 0;
+  border-top: 1px solid #D7D7D7;
+  margin-top: 25px;
+}
+.footer .text {
+  color: #fefbe2;
+  text-align: center;
+  line-height: 140%;
+}
+.footer .text .link {
+  border-bottom: 1px solid #fefbe2;
+  color: #fefbe2;
+}
+.footer .text:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.footer .footer-block {
+  margin-bottom: 50px;
+}
+
+/*---------------SCROLL---------------*/
+*,
+html * {
+  scrollbar-width: thin;
+  scrollbar-color: #113d1e #ECEDF1;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: #ECEDF1;
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #113d1e;
+  border-radius: 5px;
+}
+
+/*------------------------------*/

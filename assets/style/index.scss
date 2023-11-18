@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+* {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #ECEDF1;
+}
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+.fx {
+	display: flex;
+}
+.jc-c {
+	justify-content: center;
+}
+.fd-col {
+	flex-direction: column;
+}
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+.wrapper {
+	justify-content: center;
+}
+
+$dateText: 'Montserrat', sans-serif;
+$blockText: 'Roboto', sans-serif;
+
+@import './null';
+@import './main';
+@import './header';
+@import './photos';
+@import './footer';
+
+/*---------------SCROLL---------------*/
+*,
+html *
+
+/* override x.xhtml.ru style */
+	{
+	scrollbar-width: thin;
+	scrollbar-color: #113d1e #ECEDF1;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+	height: 5px;
+	width: 7px;
+}
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+	background: #ECEDF1;
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+	background-color: #113d1e;
+	border-radius: 5px;
+}
+
+/*------------------------------*/

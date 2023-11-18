@@ -1,0 +1,77 @@
+.header {
+    padding: 50px 0;
+    border-radius: 0 0 50px 50px;
+    background-color: #113d1e;
+    border-bottom: 1px solid #D7D7D7;
+    margin-bottom: 25px;
+}
+.clock {
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    .clock-item {
+        font-size: 150px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fefbe2;
+        &::after {
+            content: attr(data-title);
+            font-size: 24px;
+            font-family: $blockText;
+        }
+    }
+    .clock-text {
+        color: #fefbe2;
+    }
+    .end {
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fefbe2;
+        display: none;
+        &.visible {
+            display: block;
+        }
+    }
+}
+.nav {
+    justify-content: center;
+    text-align: center;
+    background-color: #113d1e;
+    max-width: 434px;
+    border-radius: 30px 30px 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -187px;
+    .nav-item {
+        padding: 15px 25px;
+    }
+    .nav-img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+        fill: #fefbe2;
+        &:active {
+            fill: #fefbe2;
+        }
+        &:focus {
+            fill: #fefbe2;
+        }
+        &:hover {
+            fill: #fefbe2;
+        }
+    }
+    .nav-text {
+        color: #fefbe2;
+        transition: 0.2s ease;
+        font-size: 13px;
+        &:active {
+            color: #fefbe2;
+        }
+        &:focus {
+            color: #fefbe2;
+        }
+        &:hover {
+            color: #fefbe2;
+        }
+    }
+}
