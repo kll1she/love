@@ -36,6 +36,11 @@ body {
   margin: 0 auto;
 }
 
+.footer-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .wrapper {
   justify-content: center;
 }
@@ -267,6 +272,9 @@ h1, h2, h3, h4, h5, h6 {
   .block .block-text {
     font-size: 16px;
   }
+  .footer .footer-block {
+    margin-bottom: 45px;
+  }
 }
 /*576px - 0px*/
 @media screen and (max-width: 576px) {
@@ -309,6 +317,12 @@ h1, h2, h3, h4, h5, h6 {
   .block .block-date {
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+  .footer-container {
+    width: 80%;
+  }
+  .footer .footer-block {
+    margin-bottom: 35px;
   }
 }
 /*---------------SCROLL---------------*/

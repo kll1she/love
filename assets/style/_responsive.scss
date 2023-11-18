@@ -26,6 +26,11 @@
             font-size: 16px;
         }
     }
+    .footer {
+        .footer-block {
+            margin-bottom: 45px;
+        }
+    }
 }
 
 /*576px - 0px*/
@@ -71,6 +76,15 @@
         .block-date {
             margin-top: 16px;
             margin-bottom: 16px;
+        }
+    }
+    // FOOTER 
+    .footer-container {
+        width: 80%;
+    }
+    .footer {
+        .footer-block {
+            margin-bottom: 35px;
         }
     }
 }
