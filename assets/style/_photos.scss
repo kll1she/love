@@ -3,6 +3,15 @@
     flex-wrap: wrap;
     gap: 25px;
 }
+.frame-wrapper {
+    justify-content: center;
+    .playlist {
+        border: none;
+        width: 1400px;
+        height: 400px;
+        margin-bottom: 16px;
+    }
+}
 .block {
     max-width: 690px;
     background-color: #fff;

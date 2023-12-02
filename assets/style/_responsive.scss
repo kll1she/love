@@ -1,11 +1,19 @@
 /*1200px - 992px*/
 @media screen and (max-width: 1200px) {
-
+    .frame-wrapper {
+        .playlist {
+            width: 690px;
+        }
+    }
 }
 
 /*992px - 768px*/
 @media screen and (max-width: 992px) {
-
+    .frame-wrapper {
+        .playlist {
+            width: 548px;
+        }
+    }
 }
 
 /*768px - 576px*/
@@ -63,6 +71,11 @@
         }
     }
     // PHOTOS
+    .frame-wrapper {
+        .playlist {
+            width: 100%;
+        }
+    }
     .block {
         max-width: 100%;
         flex-direction: column;
