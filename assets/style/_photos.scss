@@ -9,6 +9,13 @@
     border-radius: 30px;
     padding: 20px 30px;
     border: 1px solid #D7D7D7;
+    .hat {
+        z-index: 1;
+        width: 140px;
+        position: absolute;
+        margin-left: 144px;
+        margin-top: -55px;
+    }
     .block-img {
         aspect-ratio: 3 / 4;
         object-fit: cover;
